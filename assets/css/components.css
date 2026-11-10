@@ -1,0 +1,217 @@
+.poke-stats-value {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+
+.poke-stats-icon {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    background-color: var(--poke-stats-icon-bg, var(--bs-secondary-bg));
+    color: var(--poke-stats-icon-ink, var(--bs-body-color));
+    font-size: 2rem;
+    line-height: 1;
+    overflow: hidden;
+    box-shadow: var(--poke-shadow-hard-md), var(--poke-inset-light);
+}
+
+.poke-about-tab {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    display: inline-block;
+    max-width: calc(100% - 1.5rem);
+    padding: 0.25rem 1.25rem;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--poke-wall-text);
+    background-color: color-mix(in srgb, var(--bs-primary) 50%, transparent);
+    border-radius: 0.45rem;
+}
+
+.poke-news-card {
+    isolation: isolate;
+}
+
+.poke-news-card::before {
+    z-index: -1;
+}
+
+.poke-hero {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.poke-hero-veil {
+    background: linear-gradient(to bottom, color-mix(in srgb, var(--bs-body-bg) 30%, transparent), color-mix(in srgb, var(--bs-body-bg) 82%, transparent));
+}
+
+.poke-hero .container {
+    text-shadow: 0 2px 10px var(--poke-edge);
+}
+
+.poke-discord-highlight {
+    --poke-highlight-bg: var(--poke-wall-bg);
+    box-shadow: var(--poke-shadow-hard), var(--poke-inset-light);
+    background-color: var(--poke-highlight-bg);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.poke-discord-highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--poke-shadow-hard-hover), var(--poke-inset-light);
+}
+
+.poke-discord-highlight-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    background-color: var(--poke-discord-highlight-bg);
+    color: var(--poke-discord-highlight-ink);
+    font-size: 20px;
+    line-height: 1;
+    box-shadow: var(--poke-shadow-hard-sm), var(--poke-inset-icon);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.poke-discord-highlight:hover .poke-discord-highlight-icon {
+    transform: translateY(-1px);
+    box-shadow: var(--poke-shadow-hard-md), var(--poke-inset-icon);
+}
+
+.poke-discord-card {
+    --poke-discord-card-bg: var(--poke-wall-bg);
+    --poke-discord-card-text: var(--poke-wall-text);
+    --poke-discord-card-border: var(--poke-discord);
+    --poke-discord-card-shadow: rgba(0, 0, 0, 0.16);
+    --poke-discord-card-sep: rgba(31, 36, 48, 0.12);
+    --poke-discord-header-bg: var(--poke-discord);
+    --poke-discord-header-text: var(--bs-white);
+    --poke-discord-avatar-bg: var(--bs-white);
+    --poke-discord-avatar-ink: #1F2430;
+    --poke-discord-cta-bg: var(--poke-discord);
+    --poke-discord-cta-hover: var(--poke-discord-hover);
+    --poke-discord-cta-text: var(--bs-white);
+    --bs-border-color: var(--poke-discord-card-sep);
+    border: 2px solid var(--poke-discord-card-border);
+    border-radius: 20px;
+    background-color: var(--poke-discord-card-bg);
+    color: var(--poke-discord-card-text);
+    box-shadow: 0 4px 0 var(--poke-discord-card-shadow);
+    overflow: hidden;
+}
+
+[data-bs-theme="dark"] .poke-discord-card {
+    --poke-discord-card-shadow: rgba(0, 0, 0, 0.45);
+    --poke-discord-card-sep: rgba(255, 255, 255, 0.12);
+}
+
+.poke-discord-card-header {
+    position: relative;
+    min-height: 88px;
+    padding: 12px 20px 12px 24px;
+    background-color: var(--poke-discord-header-bg);
+    color: var(--poke-discord-header-text);
+    overflow: hidden;
+}
+
+.poke-discord-watermark {
+    width: 88px;
+    height: 88px;
+    filter: grayscale(1);
+    opacity: 0.35;
+}
+
+.poke-discord-avatar,
+.poke-discord-identity {
+    position: relative;
+    z-index: 1;
+}
+
+.poke-discord-avatar {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    background-color: var(--poke-discord-avatar-bg);
+    color: var(--poke-discord-avatar-ink);
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.poke-discord-identity {
+    min-width: 0;
+}
+
+.poke-discord-card-body {
+    padding: 20px 24px;
+}
+
+.poke-discord-cta {
+    min-height: 44px;
+    padding: 0 16px;
+    border: 2px solid var(--poke-edge);
+    border-radius: 10px;
+    background-color: var(--poke-discord-cta-bg);
+    background-image: var(--poke-btn-gloss);
+    box-shadow: var(--poke-shadow-edge), var(--poke-inset-light-strong);
+    color: var(--poke-discord-cta-text);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease;
+}
+
+.poke-discord-cta i {
+    font-size: 18px;
+}
+
+.poke-discord-cta:hover {
+    transform: translateY(-1px);
+    background-color: var(--poke-discord-cta-hover);
+    box-shadow: var(--poke-shadow-edge-hover), var(--poke-inset-light-strong);
+    color: var(--poke-discord-cta-text);
+}
+
+.poke-discord-cta:active {
+    transform: translateY(3px);
+    box-shadow: var(--poke-shadow-edge-active), var(--poke-inset-press);
+}
+
+.poke-discord-cta:focus-visible {
+    outline: 3px solid var(--bs-body-color);
+    outline-offset: 3px;
+}
+
+.poke-discord-cta.is-disabled,
+.poke-discord-cta:disabled {
+    transform: none;
+    box-shadow: none;
+    opacity: 0.55;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+    .poke-discord-card-header {
+        padding: 12px 16px;
+    }
+
+    .poke-discord-card-body {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .poke-discord-cta,
+    .poke-discord-highlight,
+    .poke-discord-highlight-icon {
+        transition: none;
+    }
+}

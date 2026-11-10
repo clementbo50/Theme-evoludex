@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="facebook-title facebook-desc">
+  <title id="facebook-title">Facebook façon Pokéball</title>
+  <desc id="facebook-desc">Lettre f bleue de Facebook au centre d'une Pokéball rouge et blanche.</desc>
+
+  <defs>
+    <clipPath id="facebook-ball-clip">
+      <circle cx="120" cy="120" r="100"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base Pokéball -->
+  <circle cx="120" cy="120" r="100" fill="#FFFFFF" stroke="#1F2430" stroke-width="8"/>
+  <g clip-path="url(#facebook-ball-clip)">
+    <path d="M20 120 a100 100 0 0 1 200 0 Z" fill="#E3350D"/>
+    <rect x="20" y="111" width="200" height="18" fill="#1F2430"/>
+  </g>
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#1F2430" stroke-width="8"/>
+
+  <!-- Reflet -->
+  <path d="M62 74 A72 72 0 0 1 108 34" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Lettre f simplifiée -->
+  <path d="M132 162 L132 130 L147 130 L151 110 L132 110 L132 99 Q132 91 142 91 L151 91 L151 74 L137 74 Q111 74 111 101 L111 110 L99 110 L99 130 L111 130 L111 162 Z" fill="#1877F2" stroke="#1F2430" stroke-width="6" stroke-linejoin="round"/>
+</svg>

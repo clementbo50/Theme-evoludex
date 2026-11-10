@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="discord-title discord-desc">
+  <title id="discord-title">Discord façon Pokéball</title>
+  <desc id="discord-desc">Logo Discord blanc stylisé au centre d’une Pokéball rouge et blanche.</desc>
+
+  <defs>
+    <clipPath id="discord-ball-clip">
+      <circle cx="120" cy="120" r="100"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base Pokéball -->
+  <circle cx="120" cy="120" r="100" fill="#FFFFFF" stroke="#1F2430" stroke-width="8"/>
+  <g clip-path="url(#discord-ball-clip)">
+    <path d="M20 120 a100 100 0 0 1 200 0 Z" fill="#E3350D"/>
+    <rect x="20" y="111" width="200" height="18" fill="#1F2430"/>
+  </g>
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#1F2430" stroke-width="8"/>
+
+  <!-- Reflet -->
+  <path d="M62 74 A72 72 0 0 1 108 34" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Tête Discord simplifiée -->
+  <g stroke="#1F2430" stroke-width="7" stroke-linejoin="round">
+    <path d="M72 88 Q120 70 168 88 L180 108 Q184 138 172 160 L152 152 Q136 158 120 158 Q104 158 88 152 L68 160 Q56 138 60 108 Z" fill="#5865F2"/>
+  </g>
+  <!-- Yeux -->
+  <g fill="#1F2430">
+    <ellipse cx="100" cy="122" rx="9" ry="12"/>
+    <ellipse cx="140" cy="122" rx="9" ry="12"/>
+  </g>
+  <g fill="#FFFFFF">
+    <circle cx="103" cy="118" r="3"/>
+    <circle cx="143" cy="118" r="3"/>
+  </g>
+</svg>

@@ -1,0 +1,129 @@
+.poke-footer-split {
+    --poke-footer-notch: 15%;
+}
+
+.poke-footer-split::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    background-color: var(--bs-primary);
+    clip-path: polygon(0 0, var(--poke-footer-notch) 0, 25% calc(100% + 1px), 0 calc(100% + 1px));
+    pointer-events: none;
+}
+
+.poke-footer-split::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--poke-footer-notch);
+    height: 1px;
+    background-color: var(--bs-primary);
+    pointer-events: none;
+}
+
+.poke-footer-split > * {
+    position: relative;
+    z-index: 1;
+}
+
+.poke-panel {
+    border: 3px solid transparent;
+    border-radius: 0 0 1rem 1rem;
+    background:
+        linear-gradient(var(--bs-body-bg), var(--bs-body-bg)) padding-box,
+        linear-gradient(135deg, var(--bs-primary), var(--bs-primary)) border-box;
+    box-shadow: var(--poke-shadow-hard), var(--poke-inset-light);
+}
+
+.poke-battle-header {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    background-color: var(--bs-primary);
+    filter: drop-shadow(var(--poke-shadow-hard));
+}
+
+.poke-battle-header img {
+    width: 42px;
+    height: auto;
+    flex: 0 0 auto;
+}
+
+@media (min-width: 992px) {
+    .poke-panel {
+        border-radius: 1rem;
+    }
+
+    .poke-battle-header {
+        width: auto;
+        padding: 0.5rem 3rem;
+        border-radius: 0;
+        clip-path: polygon(32px 0, 100% 0, calc(100% - 32px) 100%, 0 100%);
+    }
+
+    .poke-battle-header img {
+        width: 56px;
+    }
+}
+
+.poke-split {
+    --poke-split-edge: 50%;
+    --poke-split-seam: 4rem;
+    --poke-split-gap: 1rem;
+    --poke-split-band: clamp(72px, 14vh, 140px);
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+}
+
+.poke-split-decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -1px;
+    left: var(--poke-split-edge);
+    z-index: -1;
+    background-color: var(--bs-primary);
+    clip-path: polygon(
+        var(--poke-split-seam) 0,
+        100% 0,
+        100% calc(100% + 1px),
+        0 calc(100% + 1px)
+    );
+    pointer-events: none;
+}
+
+.poke-split--reverse .poke-split-decor {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% + 1px),
+        var(--poke-split-seam) calc(100% + 1px)
+    );
+}
+
+@media (min-width: 992px) {
+    .poke-split-right {
+        padding-inline-start: calc(var(--poke-split-gap) + var(--poke-split-seam));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .poke-split-decor,
+    .poke-split--reverse .poke-split-decor {
+        position: static;
+        flex: 0 0 auto;
+        width: 100%;
+        height: var(--poke-split-band);
+        clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .poke-split--reverse .poke-split-decor {
+        clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 100%);
+    }
+}
+

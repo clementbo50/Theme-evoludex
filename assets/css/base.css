@@ -1,0 +1,99 @@
+:root {
+    --poke-font: 'Nunito';
+    --poke-font-titles: var(--poke-font), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --poke-font-titles-weight: 900;
+    --poke-font-body: var(--poke-font), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+    --poke-brand-red: #E3350D;
+    --poke-edge: rgba(0, 0, 0, 0.55);
+    --poke-edge-soft: rgba(0, 0, 0, 0.45);
+
+    --poke-shadow-hard: 0 4px 0 rgba(0, 0, 0, 0.35);
+    --poke-shadow-hard-hover: 0 6px 0 rgba(0, 0, 0, 0.35);
+    --poke-shadow-hard-hover-sm: 0 5px 0 rgba(0, 0, 0, 0.35);
+    --poke-shadow-hard-active: 0 1px 0 rgba(0, 0, 0, 0.35);
+    --poke-shadow-hard-sm: 0 2px 0 rgba(0, 0, 0, 0.35);
+    --poke-shadow-hard-md: 0 3px 0 rgba(0, 0, 0, 0.35);
+
+    --poke-shadow-edge: 0 4px 0 var(--poke-edge);
+    --poke-shadow-edge-hover: 0 5px 0 var(--poke-edge);
+    --poke-shadow-edge-active: 0 1px 0 var(--poke-edge);
+    --poke-shadow-edge-md: 0 3px 0 var(--poke-edge);
+
+    --poke-btn-gloss: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0 46%, rgba(0, 0, 0, 0.22) 54%, rgba(0, 0, 0, 0) 100%);
+    --poke-btn-gloss-flat: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0 50%, rgba(0, 0, 0, 0.16) 50%);
+
+    --poke-inset-light: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+    --poke-inset-light-strong: inset 0 2px 0 rgba(255, 255, 255, 0.35);
+    --poke-inset-light-faint: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    --poke-inset-light-active: inset 0 2px 0 rgba(255, 255, 255, 0.3);
+    --poke-inset-light-soft: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    --poke-inset-icon: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    --poke-inset-press: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+    --poke-inset-press-soft: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    --poke-field-inset: inset 0 2px 8px rgba(0, 0, 0, 0.22);
+    --poke-field-inset-focus: inset 0 2px 6px rgba(0, 0, 0, 0.18);
+    --poke-check-inset: inset 0 1px 4px rgba(0, 0, 0, 0.25);
+    --poke-table-inset: inset 0 2px 8px rgba(0, 0, 0, 0.18);
+    --poke-track-inset: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+
+    --poke-focus-ring: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+
+    --poke-radius-pill: 50rem;
+    --poke-discord: #5865F2;
+    --poke-discord-hover: #4752C4;
+
+    --poke-roof-bg: var(--poke-brand-red);
+    --poke-roof-edge: var(--poke-edge);
+    --poke-wall-bg: #FFFFFF;
+    --poke-wall-text: #1F2430;
+}
+
+[data-bs-theme="dark"] {
+    --poke-wall-bg: #232C3D;
+    --poke-wall-text: #F4F6FB;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--poke-font-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--poke-font-titles);
+    font-weight: var(--poke-font-titles-weight) !important;
+}
+
+p {
+    font-family: var(--poke-font-body);
+}
+
+.lead {
+    font-weight: 600 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:focus-visible {
+    outline: 3px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

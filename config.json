@@ -1,0 +1,116 @@
+{
+    "colors": {
+        "light_primary": "#2b5fa6",
+        "light_secondary": "#9c3fa8",
+        "light_bg": "#f7f4ec",
+        "dark_primary": "#7fb0f0",
+        "dark_secondary": "#d08ade",
+        "dark_bg": "#101828"
+    },
+    "font": {
+        "toggle": "1",
+        "url": "https://fonts.bunny.net/css?family=nunito:400,700&display=swap",
+        "text": "Nunito"
+    },
+    "navbar": {
+        "sticky": "1",
+        "show_brand_text": "1",
+        "show_discord": "1",
+        "logo_size": "48"
+    },
+    "footer": {
+        "title": "Evoludex, le thème Pokémon de votre serveur",
+        "description": "Un thème Azuriom complet pour présenter votre serveur Pokémon, vos actualités et votre communauté Discord.",
+        "legal": "Non affilié à Nintendo, Game Freak, Creatures Inc., The Pokémon Company, Mojang Studios ou Microsoft.",
+        "social_pokeball": "1",
+        "links": [
+            {
+                "name": "Accueil",
+                "value": "/",
+                "new_tab": "0"
+            },
+            {
+                "name": "Actualités",
+                "value": "/news",
+                "new_tab": "0"
+            },
+            {
+                "name": "Thème Evoludex",
+                "value": "https://github.com/clementbo50",
+                "new_tab": "1"
+            }
+        ]
+    },
+    "hero": {
+        "visible": "1",
+        "description": "Evoludex habille votre serveur Pokémon avec un design inspiré du Pokédex, clair et moderne.",
+        "show_description": "1",
+        "bg": null,
+        "buttons": [
+            {
+                "type": "copy",
+                "label": "play.evoludex.fr"
+            },
+            {
+                "type": "link",
+                "label": "Voir le thème",
+                "value": "https://github.com/clementbo50",
+                "new_tab": "1"
+            }
+        ]
+    },
+    "about": {
+        "visible": "1",
+        "show_title": "1",
+        "title": "Evoludex, un thème complet pour votre serveur",
+        "show_description": "1",
+        "description": "Présentez votre univers, vos fonctionnalités et votre équipe dans une section claire et agréable à lire.",
+        "image": null,
+        "caption": null
+    },
+    "news": {
+        "visible": "1",
+        "show_title": "1",
+        "title": "Les dernières actualités",
+        "description": "Retrouvez les annonces, mises à jour et événements de la communauté.",
+        "show_description": "1",
+        "show_author": "1",
+        "show_date": "1"
+    },
+    "stats": {
+        "visible": "1",
+        "show_title": "1",
+        "title": "Le serveur en un coup d'œil",
+        "description": "Joueurs connectés, membres et communauté Discord en temps réel.",
+        "show_description": "1",
+        "discord_mode": "registered",
+        "icon_backgrounds": {
+            "players": "#fbe0dc",
+            "members": "#e4e2fa",
+            "discord": "#ddf3e6"
+        }
+    },
+    "discord": {
+        "visible": "1",
+        "show_title": "1",
+        "title": "Rejoignez la communauté Evoludex",
+        "invite": "evoludex",
+        "highlights": [
+            {
+                "label": "Annonces et événements",
+                "icon": "bi-trophy-fill",
+                "color": "#fbe0dc"
+            },
+            {
+                "label": "Entraide entre joueurs",
+                "icon": "bi-chat-dots-fill",
+                "color": "#e4e2fa"
+            },
+            {
+                "label": "Salons thématiques",
+                "icon": "bi-hash",
+                "color": "#ddf3e6"
+            }
+        ]
+    }
+}

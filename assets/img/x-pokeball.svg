@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="x-title x-desc">
+  <title id="x-title">X façon Pokéball</title>
+  <desc id="x-desc">Logo X noir au centre d'une Pokéball rouge et blanche.</desc>
+
+  <defs>
+    <clipPath id="x-ball-clip">
+      <circle cx="120" cy="120" r="100"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base Pokéball -->
+  <circle cx="120" cy="120" r="100" fill="#FFFFFF" stroke="#1F2430" stroke-width="8"/>
+  <g clip-path="url(#x-ball-clip)">
+    <path d="M20 120 a100 100 0 0 1 200 0 Z" fill="#E3350D"/>
+    <rect x="20" y="111" width="200" height="18" fill="#1F2430"/>
+  </g>
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#1F2430" stroke-width="8"/>
+
+  <!-- Reflet -->
+  <path d="M62 74 A72 72 0 0 1 108 34" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Logo X simplifié -->
+  <g stroke-linejoin="round">
+    <path d="M78 86 L94 86 L162 154 L146 154 Z" fill="#0F1419" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M162 86 L146 86 L78 154 L94 154 Z" fill="#0F1419" stroke="#FFFFFF" stroke-width="4"/>
+  </g>
+</svg>

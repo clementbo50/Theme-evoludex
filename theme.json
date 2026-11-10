@@ -1,0 +1,11 @@
+{
+    "id": "theme-evoludex",
+    "name": "Evoludex",
+    "description": "Evoludex is a theme for any server that wants to build a website set in the Pokémon universe.",
+    "version": "1.0.0",
+    "url": "https://github.com/clementbo50",
+    "authors": [
+        "clementbodev"
+    ],
+    "azuriom_api": "1.1.0"
+}
